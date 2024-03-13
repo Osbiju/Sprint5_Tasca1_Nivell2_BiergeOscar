@@ -31,9 +31,10 @@ public class FlorService {
     }
 
     //create flor
-    private FlorDTO createFlor(FlorDTO florDTO){
+    public FlorDTO createFlor(FlorDTO florDTO){
         return  convertToFlorDTO(florRepository.save(convertToFlorEntity(florDTO)));
     }
+
     //update
     //delete
     //getOne
